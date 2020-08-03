@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">COVID 19 Tracker</string>
+    <string name="url">https://disease.sh/v2/</string>
+    <string name="ok">Ok</string>
+    <string name="alert">Alert</string>
+    <string name="cases_title">Coronavirus Cases:</string>
+    <string name="death_title">Deaths:</string>
+    <string name="recovered_title">Recovered:</string>
+    <string name="last_updated">"Last Updated: "</string>
+    <string name="last_updated_on">Last updated on:</string>
+    <string name="no_internet">Internet Connection not available</string>
+</resources>

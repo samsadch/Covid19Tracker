@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/refreshImv"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/recoveredTxv"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_refresh"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/casesTitle"
+        android:textColor="@color/title_color"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/cases_title"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/cases_color"
+        android:text=""
+        android:textSize="32sp"
+        android:id="@+id/casesTxv"
+        android:layout_below="@+id/casesTitle"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/title_color"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/death_title"
+        android:textSize="24sp"
+        android:id="@+id/deathsTitle"
+        android:layout_below="@+id/casesTxv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/death_color"
+        android:text=""
+        android:textSize="32sp"
+        android:id="@+id/deathsTxv"
+        android:layout_below="@+id/deathsTitle"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/title_color"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/recovered_title"
+        android:textSize="24sp"
+        android:id="@+id/recoveredTitle"
+        android:layout_below="@+id/deathsTxv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/recovered_color"
+        android:text=""
+        android:textSize="32sp"
+        android:id="@+id/recoveredTxv"
+        android:layout_below="@+id/recoveredTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/title_color"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/last_updated"
+        android:textSize="12sp"
+        android:id="@+id/lastUpdatedTxv"
+        android:layout_below="@+id/recoveredTxv"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/lastUpdatedTxv">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:id="@+id/myRlay"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/nameTxv"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/rectangle_background"
+                android:padding="4dp"
+                android:textSize="14sp"
+                android:text="Country"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/totalCasesTxv"
+                android:text="Total Cases"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:background="@drawable/rectangle_background"
+                android:layout_weight=".7"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/newCasesTxv"
+                android:text="New Cases"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:background="@drawable/rectangle_background"
+                android:layout_weight=".7"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/totalDeathsTxv"
+                android:text="Total Deaths"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat"
+                android:padding="4dp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_background"
+                android:layout_weight=".7"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/newDeathsTxv"
+                android:text="New Deaths"
+                android:padding="4dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:background="@drawable/rectangle_background"
+                android:layout_weight=".7"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/totalRecoveredTxv"
+                android:text="Total Recovery"
+                android:fontFamily="@font/montserrat"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:background="@drawable/rectangle_background"
+                android:layout_weight=".7"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myRlay"
+            android:id="@+id/updateListRcv" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
