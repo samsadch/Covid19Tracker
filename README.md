@@ -7,9 +7,9 @@ Simple Covid19Tracker tracking application
 
 <p align="center">
   <img src="screens/home.png" width="300" height="600">
-  <img src="images/country.png" width="300" height="600">
-  <img src="images/map.png" width="300" height="600">
-  <img src="images/usa.png" width="300" height="600">
+  <img src="screens/country.png" width="300" height="600">
+  <img src="screens/map.png" width="300" height="600">
+  <img src="screens/usa.png" width="300" height="600">
 </p>
 
 
